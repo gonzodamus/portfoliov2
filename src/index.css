@@ -1,0 +1,67 @@
+body,html{
+  margin: 0;
+  padding: 0;
+}
+.Navbar{
+  height: 3vh;
+  background-color: #F5F5F7
+}
+.Splash{
+  height: 97vh;
+  background-color: #F5F5F7
+}
+.Bio{
+  height: 40vh;
+  background-color: #1B1C1D
+}
+.Quotes{
+  height: 30vh;
+  background-color: #3BA99C;
+  background: linear-gradient(180deg, #3ECFC5 0%, #31AAA2 100%), #3BA99C;
+}
+.Container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "Description1 Project1"
+  "Project2 Description2"
+  "Description3 Project3";
+}
+.Project1{
+  grid-area: Project1;
+  height: 50vh;background-color: #A3392F;
+}
+.Description1{
+  grid-area: Description1;
+  height: 50vh;
+  background-color: #fff;
+}
+.Description2{
+  grid-area: Description2;
+  height: 50vh;
+  background-color: #fff;
+}
+.Project2{
+  grid-area: Project2;
+  height: 50vh;
+  background-color: #5C83A8;
+}
+.Project3{
+  grid-area: Project3;
+  height: 50vh;
+  background-color: #559D97;
+}
+.Description3{
+  grid-area: Description3;
+  height: 50vh;
+  background-color: #fff;
+}
+.CurrentProjects{
+  height: 50vh;
+  background-color: #25A2B7;
+}
+.Contact{
+  height: 30vh;
+  background-color: #1B1C1D
+}
