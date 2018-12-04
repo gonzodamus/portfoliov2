@@ -2,9 +2,11 @@ body,html{
   margin: 0;
   padding: 0;
   font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .Navbar{
-  height: 3vh;
+  height: 5vh;
   background-color: #F5F5F7;
   text-align: right;
   width: 100%;
@@ -16,14 +18,22 @@ body,html{
 .Link {
   color: #25A2B7;
   text-decoration: underline;
-  font-size: 2.5vh;
+  font-size: 1.2em;
+  margin-top: 15px;
 }
 .Link:hover{
   cursor: pointer;
 }
 .Splash{
-  height: 97vh;
+  height: 70vh;
   background-color: #F5F5F7;
+  position: relative;
+}
+.Splash > img{
+  position: absolute;
+  bottom: 0;
+  height: 65%;
+  margin-left: -10px;
 }
 .SplashText{
   position: absolute;
@@ -33,22 +43,48 @@ body,html{
 }
 .Headline{
   font-size: 4em;
-}
-.Byline{
-  font-size: 1em;
+  letter-spacing: 2px;
 }
 .Headline > hr{
   font-size: 0px;
   margin-top: -10px;
+  color: black;
+}
+.Byline{
+  font-size: 1.5em;
+  text-align: right;
+  color: #9C9DA0;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  margin-right: 5px;
 }
 .Bio{
-  height: 40vh;
   background-color: #1B1C1D;
 }
+.BioText {
+  color: #F5F5F7;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: auto;
+  font-size: 1.1em;
+}
+.BioText > span{
+  color: #3BA99C;
+}
 .Quotes{
-  height: 30vh;
   background-color: #3BA99C;
   background: linear-gradient(180deg, #3ECFC5 0%, #31AAA2 100%), #3BA99C;
+}
+.QuotesText{
+  width: 90%;
+  padding-top: 10px;
+  margin: auto;
+  font-size: 1.1em;
+}
+.QuotesText > span{
+  line-height: 3em;
+  font-style: italic;
 }
 .Container{
   display: grid;
@@ -63,32 +99,48 @@ body,html{
 }
 .Project1{
   grid-area: Project1;
-  height: 50vh;background-color: #A3392F;
+  height: 30vh;
+  background-color: #a3342a;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23d24536' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 .Description1{
+  position: relative;
   grid-area: Description1;
-  height: 50vh;
   background-color: #fff;
+  width: 95%;
+  margin: auto;
+  text-align: center;
 }
 .Description2{
   grid-area: Description2;
-  height: 50vh;
   background-color: #fff;
 }
 .Project2{
   grid-area: Project2;
-  height: 50vh;
-  background-color: #5C83A8;
+  height: 30vh;
+  background-color: #5c83a8;
+background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2371a3d0' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 .Project3{
   grid-area: Project3;
-  height: 50vh;
-  background-color: #559D97;
+  height: 30vh;
+  background-color: #559d97;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%235fb1ab' fill-opacity='0.54' fill-rule='nonzero'%3E%3Cpath d='M29 58.58l7.38-7.39A30.95 30.95 0 0 1 29 37.84a30.95 30.95 0 0 1-7.38 13.36l7.37 7.38zm1.4 1.41l.01.01h-2.84l-7.37-7.38A30.95 30.95 0 0 1 6.84 60H0v-1.02a28.9 28.9 0 0 0 18.79-7.78L0 32.41v-4.84L18.78 8.79A28.9 28.9 0 0 0 0 1.02V0h6.84a30.95 30.95 0 0 1 13.35 7.38L27.57 0h2.84l7.39 7.38A30.95 30.95 0 0 1 51.16 0H60v27.58-.01V60h-8.84a30.95 30.95 0 0 1-13.37-7.4L30.4 60zM29 1.41l-7.4 7.38A30.95 30.95 0 0 1 29 22.16 30.95 30.95 0 0 1 36.38 8.8L29 1.4zM58 1A28.9 28.9 0 0 0 39.2 8.8L58 27.58V1.02zm-20.2 9.2A28.9 28.9 0 0 0 30.02 29h26.56L37.8 10.21zM30.02 31a28.9 28.9 0 0 0 7.77 18.79l18.79-18.79H30.02zm9.18 20.2A28.9 28.9 0 0 0 58 59V32.4L39.2 51.19zm-19-1.4a28.9 28.9 0 0 0 7.78-18.8H1.41l18.8 18.8zm7.78-20.8A28.9 28.9 0 0 0 20.2 10.2L1.41 29h26.57z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 .Description3{
   grid-area: Description3;
-  height: 50vh;
   background-color: #fff;
+}
+.DescriptionHeader{
+  text-align: center;
+  font-size: 2em;
+  color: #1B1C1D;
+  margin-bottom: 20px;
+}
+.DescriptionLinks{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.3em;
 }
 .CurrentProjects{
   height: 50vh;
