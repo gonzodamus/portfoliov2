@@ -114,6 +114,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .Description2{
   grid-area: Description2;
   background-color: #fff;
+  width: 95%;
+  margin: auto;
+  text-align: center;
 }
 .Project2{
   grid-area: Project2;
@@ -130,6 +133,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .Description3{
   grid-area: Description3;
   background-color: #fff;
+  width: 95%;
+  margin: auto;
+  text-align: center;
 }
 .DescriptionHeader{
   text-align: center;
@@ -143,12 +149,44 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-size: 1.3em;
 }
 .CurrentProjects{
-  height: 50vh;
   background-color: #25A2B7;
+  color: #F5F5F7;
+  padding: 2% 5% 2% 5%
+}
+.CurrentProjects > div{
+  color: #F5F5F7
 }
 .Contact{
-  height: 30vh;
-  background-color: #1B1C1D
+  background-color: #1B1C1D;
+  color: #9C9DA0;
+  padding: 2% 5% 2% 5%;
+}
+.ContactInfo{
+  margin-bottom: 3%;
+  margin-top: 3%;
+  font-size: 1.1em;
+}
+.Email{
+  color: #25A2B7;
+}
+.Input{
+  width: 85%;
+  margin-left: 5%;
+  margin-right: 10%;
+  height: 2em;
+  font-size: 1em;
+}
+.Label{
+  margin-left: 5%;
+}
+.Submit{
+  background-color: #fff;
+  padding: 2px;
+  border: solid;
+  border-width: 1px;
+  width: 20%;
+  margin-left: 70%;
+  text-align: center;
 }
 @media only screen and (min-width: 420px)   {
     .Container {
