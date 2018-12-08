@@ -112,6 +112,7 @@ body,html{
   background-color: #fff;
   width: 95%;
   margin: auto;
+  margin-top: 2%;
   text-align: center;
 }
 .Description2{
@@ -119,6 +120,7 @@ body,html{
   background-color: #fff;
   width: 95%;
   margin: auto;
+  margin-top: 2%;
   text-align: center;
 }
 .Project2{
@@ -144,13 +146,14 @@ body,html{
   background-color: #fff;
   width: 95%;
   margin: auto;
+  margin-top: 2%;
   text-align: center;
 }
 .DescriptionHeader{
   text-align: center;
   font-size: 2em;
   color: #1B1C1D;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .DescriptionLinks{
   margin-top: 5px;
@@ -170,12 +173,20 @@ body,html{
 .CurrentProjects > div{
   color: #F5F5F7
 }
+.CurrentProjects > img{
+  width: 60%;
+  float: right;
+  margin: 2px;
+}
 .Contact{
   background-color: #1B1C1D;
   color: #9C9DA0;
   padding: 2% 5% 2% 5%;
 }
 .ContactInfo{
+  grid-area: text;
+  width: 80%;
+  margin: auto;
   margin-bottom: 3%;
   margin-top: 3%;
   font-size: 1.1em;
@@ -183,10 +194,24 @@ body,html{
 .Email{
   color: #25A2B7;
 }
+.ContactImages{
+  width: 40%;
+  display: flex;
+  margin-left: 50%;
+  justify-content: space-between;
+}
+.ContactImages > a > img{
+  margin-top: 1em;
+  height: 2em;
+}
+.ContactForm{
+  grid-area: form;
+}
 .Input{
   width: 85%;
   margin-left: 5%;
   margin-right: 10%;
+  margin-bottom: 3%;
   height: 2em;
   font-size: 1em;
 }
@@ -212,7 +237,6 @@ body,html{
       "Project2 Description2"
       "Description3 Project3";
     }
-
     .Navbar{
       height: 4vh;
       background-color: #F5F5F7;
@@ -221,7 +245,6 @@ body,html{
       display: flex;
       justify-content: space-around;
     }
-
     .Link {
       color: #25A2B7;
       text-decoration: underline;
@@ -251,7 +274,6 @@ body,html{
       "Project2 Description2"
       "Description3 Project3";
     }
-
     .Navbar{
       height: 2.5em;
       background-color: #F5F5F7;
@@ -260,23 +282,91 @@ body,html{
       display: flex;
       justify-content: flex-end;
     }
-
     .Link {
       color: #25A2B7;
       text-decoration: underline;
       font-size: 1.5em;
       margin-right: 1.5em;
     }
-    /* .SplashText{
+    .SplashText{
       position: absolute;
-      top: 10em;
       right: 5em;
       text-align: right;
     }
     .Headline{
-      font-size: 10em;
+      font-size: 8em;
+    }
+    .Headline > hr {
+      width: 50%;
+      margin-left: 50%;
     }
     .Byline{
       font-size: 2em;
-    } */
+    }
+    .Splash{
+      height: 100vh;
+    }
+    .Splash > img{
+      height: 90%;
+      margin-left: 20px;
+    }
+    .Bio{
+      padding: 2% 10% 2% 10%;
+      font-size: 1.2em;
+      line-height: 1.4em;
+    }
+    .Quotes{
+
+    }
+    .QuotesText{
+      width: 50%;
+      margin-left: 30%;
+      font-size: 1.2em;
+    }
+    .Project1{
+      min-height: 20em;
+    }
+    .Project2{
+      min-height: 20em;
+    }
+    .Project3{
+      min-height: 20em;
+    }
+    .Description1{
+    width: 70%;
+    font-size: 1.2em;
+    margin-top: 8%;
+    }
+    .Description2{
+    width: 70%;
+    font-size: 1.2em;
+    margin-top: 8%;
+    }
+    .Description3{
+    width: 70%;
+    font-size: 1.2em;
+    margin-top: 8%;
+    }
+    .CurrentProjects{
+      font-size: 1.2em;
+    }
+    .CurrentProjects > p{
+      width: 80%;
+      margin-left: 10%;
+    }
+    .CurrentProjects > img{
+      max-height: 14%;
+      max-width: 14%;
+      float: left;
+      margin-left: 10%;
+      margin-right: 1%;
+    }
+    .Contact{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "form text"
+    }
+    .ContactInfo{
+      font-size: 1.2em;
+    }
 }
