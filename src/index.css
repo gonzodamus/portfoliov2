@@ -64,6 +64,10 @@ body,html{
 }
 .Bio{
   background-color: #1B1C1D;
+   border-style: solid;
+   border-color: #1B1C1D;
+   border-width: 40px 0px 0px 0px;
+   margin-top: -40px;
 }
 .BioText {
   color: #F5F5F7;
@@ -121,6 +125,9 @@ body,html{
   "Description2"
   "Project3"
   "Description3";
+  border-width: 40px 0px 0px 0px;
+  border-style: solid;
+  margin-top: -40px;
 }
 .Project1{
   grid-area: Project1;
@@ -132,18 +139,15 @@ body,html{
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23d24536' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 .Description1{
-  position: relative;
   grid-area: Description1;
   width: 95%;
-  margin: auto;
-  margin-top: 2%;
+  place-self: center;
   text-align: center;
 }
 .Description2{
   grid-area: Description2;
   width: 95%;
-  margin: auto;
-  margin-top: 2%;
+  place-self: center;
   text-align: center;
 }
 .Project2{
@@ -167,8 +171,7 @@ body,html{
 .Description3{
   grid-area: Description3;
   width: 95%;
-  margin: auto;
-  margin-top: 2%;
+  place-self: center;
   text-align: center;
 }
 .DescriptionHeader{
@@ -186,6 +189,9 @@ body,html{
   text-align: center;
   font-size: 1.3em;
 }
+.DescriptionLinks > a {
+  color: #25A2B7
+}
 .ProjectImage{
   max-height: 90%;
   max-width: 90%;
@@ -199,7 +205,7 @@ body,html{
   color: #F5F5F7
 }
 .CurrentProjects > img{
-  width: 60%;
+  width: 30%;
   float: right;
   margin: 2px;
 }
@@ -216,7 +222,7 @@ body,html{
   margin-top: 3%;
   font-size: 1.1em;
 }
-.Email{
+a{
   color: #25A2B7;
 }
 .ContactImages{
@@ -253,51 +259,10 @@ body,html{
   text-align: center;
 }
 
-@media only screen and (min-width: 420px)   {
-    .Container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      grid-template-areas:
-      "Description1 Project1"
-      "Project2 Description2"
-      "Description3 Project3";
-    }
-    .Navbar{
-      height: 4vh;
-      background-color: #F5F5F7;
-      width: 100%;
-      position: fixed;
-      display: flex;
-      justify-content: space-around;
-    }
-    .Link {
-      color: #25A2B7;
-      text-decoration: underline;
-      font-size: 1.2em;
-    }
-    .SplashText{
-      position: absolute;
-      width: 100%;
-      text-align: center;
-    }
-    .Headline{
-      font-size: 5em;
-    }
-    .Byline{
-      font-size: 1em;
-    }
-    .CurrentProjects > img{
-      max-height: 14%;
-      max-width: 14%;
-      float: left;
-      margin-left: 10%;
-      margin-right: 1%;
-    }
-}
 
 
-@media only screen and (min-width: 800px)   {
+
+@media only screen and (min-width: 745px)   {
     .Container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -321,13 +286,9 @@ body,html{
       font-size: 1.5em;
       margin-right: 1.5em;
     }
-    .SplashText{
-      position: absolute;
-      right: 5em;
-      text-align: right;
-    }
+
     .Headline{
-      font-size: 8em;
+      font-size: 6em;
     }
     .Headline > hr {
       width: 50%;
@@ -338,10 +299,15 @@ body,html{
     }
     .Splash{
       height: 100vh;
+      width: 100%;
     }
     .Splash > img{
       height: 90%;
       margin-left: 20px;
+    }
+    .SplashText{
+      position: absolute;
+      text-align: right;
     }
     .Link{
       font-size: 1em;
@@ -418,4 +384,21 @@ body,html{
     .ContactInfo{
       font-size: 1.2em;
     }
+}
+
+@media only screen and (min-width: 970px)  {
+  .SplashText{
+    position: absolute;
+    right: 5em;
+    text-align: right;
+  }
+  .Headline{
+    font-size: 8em;
+  }
+}
+@media only screen and (min-width: 1400px)  {
+  .CurrentProjects > img{
+    max-height: 10%;
+    max-width: 10%;
+  }
 }
