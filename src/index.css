@@ -4,6 +4,8 @@ body,html{
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  background-color: #1B1C1D;
+  scroll-behavior: smooth;
 }
 .Navbar{
   height: 2.5em;
@@ -14,6 +16,7 @@ body,html{
   display: flex;
   justify-content: space-around;
   z-index: 2;
+  border-radius: 0px 0px 30px 30px
 }
 .Link {
   color: #25A2B7;
@@ -28,6 +31,7 @@ body,html{
   height: 70vh;
   background-color: #F5F5F7;
   position: relative;
+  border-radius: 0px 0px 30px 30px
 }
 .Splash > img{
   position: absolute;
@@ -73,20 +77,41 @@ body,html{
   color: #3BA99C;
 }
 .Quotes{
+  position: relative;
   background-color: #3BA99C;
-  background: linear-gradient(180deg, #3ECFC5 0%, #31AAA2 100%), #3BA99C;
+  height: 100%;
 }
 .QuotesText{
+  background-color: #3BA99C;
   width: 90%;
   padding-top: 10px;
   margin: auto;
   font-size: 1.1em;
 }
-.QuotesText > span{
-  line-height: 3em;
+.QuotesText > p{
   font-style: italic;
 }
+.FirstQuote{
+  background-color: #3BA99C;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.SecondQuote{
+  position: absolute;
+  top: 0;
+  left: 5%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.ThirdQuote{
+  position: absolute;
+  top: 0;
+  left: 5%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 .Container{
+  background-color: #fff;
   display: grid;
   grid-template-rows: auto;
   grid-template-areas:
@@ -109,7 +134,6 @@ body,html{
 .Description1{
   position: relative;
   grid-area: Description1;
-  background-color: #fff;
   width: 95%;
   margin: auto;
   margin-top: 2%;
@@ -117,7 +141,6 @@ body,html{
 }
 .Description2{
   grid-area: Description2;
-  background-color: #fff;
   width: 95%;
   margin: auto;
   margin-top: 2%;
@@ -143,7 +166,6 @@ body,html{
 }
 .Description3{
   grid-area: Description3;
-  background-color: #fff;
   width: 95%;
   margin: auto;
   margin-top: 2%;
@@ -153,7 +175,10 @@ body,html{
   text-align: center;
   font-size: 2em;
   color: #1B1C1D;
-  margin-bottom: 10px;
+}
+.DescriptionSubheader{
+  margin-bottom: 2%;
+  color: #666;
 }
 .DescriptionLinks{
   margin-top: 5px;
@@ -227,6 +252,7 @@ body,html{
   margin-left: 70%;
   text-align: center;
 }
+
 @media only screen and (min-width: 420px)   {
     .Container {
       display: grid;
@@ -310,6 +336,10 @@ body,html{
       height: 90%;
       margin-left: 20px;
     }
+    .Link{
+      font-size: 1em;
+      margin-top: 5px;
+    }
     .Bio{
       padding: 2% 10% 2% 10%;
       font-size: 1.2em;
@@ -322,6 +352,12 @@ body,html{
       width: 50%;
       margin-left: 30%;
       font-size: 1.2em;
+    }
+    .SecondQuote{
+      left: 0;
+    }
+    .ThirdQuote{
+      left: 0;
     }
     .Project1{
       min-height: 20em;

@@ -6,48 +6,63 @@
     <title>Dick Ward | Full-Stack Web Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js">
+
+    </script>
   </head>
   <body>
     <div class="Navbar">
-       <div class="Link">About Me</div>  <div class="Link">My Projects</div>  <div class="Link">Get in Touch!</div>
+       <a href="#Bio"><div class="Link">About Me</div></a>
+       <a href="#Projects"><div class="Link">My Projects</div></a>
+       <a href="#Contact"><div class="Link">Get in Touch!</div></a>
     </div>
-    <div class="Splash">
-      <img src="images/DickCartoon.png"/>
-      <div class="SplashText">
-        <div class="Headline">
-          Dick Ward
-          <hr>
-        </div>
-        <div class="Byline">
-          Full-Stack Web Developer<br>
-           Teacher<br>
-            Friend
+      <div class="Splash">
+        <img src="images/DickCartoon.png"/>
+        <div class="SplashText">
+          <div class="Headline">
+            Dick Ward
+            <hr>
+          </div>
+          <div class="Byline">
+            Full-Stack Web Developer<br>
+             Teacher<br>
+              Friend
+          </div>
         </div>
       </div>
-    </div>
-    <div class="Bio">
+    <div id="Bio" class="Bio">
       <div class="BioText">
-        Lorem ipsum dolor sit amet, <span>consectetur</span> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <span>commodo</span> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <span>Excepteur</span> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Full stack web developer with a flair for the theatrical and a mission to leave the world a better place than I found it. Experienced in <span>JavaScript</span> programming including <span>React</span> and <span>Redux</span>. I discovered web development while customizing a professional website for myself and got hooked on the <span>problem solving</span> and creativity of programming.  After graduating Flatiron School, I was hired as a Technical Coaching Fellow to teach students, write curriculum, and use my skills and knowledge to <span>improve</span> student outcomes.
       </div>
     </div>
     <div class="Quotes">
-      <div class="QuotesText">“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-        <br>
-        <span>- Wayne Gretzky</span>
+        <div id="FirstQuote" class="QuotesText FirstQuote">“Dick is the person who will always bring the team up, and get everyone feeling great. On top of that he ships great work, and is a talented developer. I would love to work with him again, and anyone who has the chance to do so is very lucky.”
+          <br>
+          <p>- Genevieve Costa, UX Program Manager at Google</p>
+        </div>
+        <div id="SecondQuote" class="QuotesText SecondQuote">“Throughout the project, Dick always demonstrated good leadership skills. Whenever the group was deviating from the main focus of the project, he would take a depth breath, and gather the whole group together and get everybody to focus again.”
+          <br>
+          <p>- Fabiano Cunha, Dev Ops Engineer at 10th Floor Software</p>
+        </div>
+        <div id="ThirdQuote" class="QuotesText ThirdQuote">“Let me tell you this thing about Dick that totally shows off his amazing soft skills.  His skills.  They be soft. And mighty.”
+          <br>
+          <p>- Brandon Collins, Senior Program Manager at Flatiron School</p>
+        </div>
       </div>
-    </div>
-    <div class="Container">
+    <div id="Projects" class="Container">
       <div class="Project1">
         <img class="ProjectImage" src="images/FieldDay.png" />
       </div>
       <div class="Description1">
         <div class="DescriptionHeader">Flatiron Field Day</div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="DescriptionSubheader">JavaScript | Canvas | React</div>
+        Field Day was an all day event for our students that allowed them to draw on a live-updating canvas by sending requests from Ruby, Python or JavaScript clients.
         <div class="DescriptionLinks">Blog | Github</div>
       </div>
       <div class="Description2">
         <div class="DescriptionHeader">Yelp Disney</div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="DescriptionSubheader">React | Redux | Rails | Semantic UI</div>
+        To create the ratings in Yelp Disney, I utilized SVG Clip Paths, which allowed me to find a report a bug in Google Chrome.  The app was also built with React and Redux.
         <div class="DescriptionLinks">Blog | Github</div>
       </div>
       <div class="Project2">
@@ -58,6 +73,7 @@
       </div>
       <div class="Description3">
         <div class="DescriptionHeader">Schedulr</div>
+        <div class="DescriptionSubheader">React | Draggable | Semantic UI</div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         <div class="DescriptionLinks">Blog | Github</div>
       </div>
@@ -65,11 +81,11 @@
     <div class="CurrentProjects">
       <div class="DescriptionHeader">Current Projects </div>
       <img src="images/Native.png"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Building upon my experience with React, I'm starting on a project that will utilize React Native.  While my initial studies will focus on smaller apps, my intention is to build out a companion piece to my Yelp Disney project.</p>
   </div>
-    <div class="Contact">
+    <div id="Contact" class="Contact">
       <div class="ContactInfo">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <span class="Email">TheDickWard@gmail.com</span> incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Want to get in touch with me?  Great, I'd love to hear from you!  Hit me up on the contact form to the left, via email at <a class="Email" href="mailto:theDickWard@gmail.com?subject=Hey Dick! Let's chat :)">TheDickWard@gmail.com</a>, or on any of the platforms linked below.
       <div class="ContactImages">
         <a href="https://www.linkedin.com/in/dick-ward/"><img src="images/Linkedin.png" /></a>
         <a href="https://www.github.com/gonzodamus/"><img src="images/Github.png" /></a>
@@ -77,24 +93,24 @@
       </div>
     </div>
       <div class="ContactForm">
-        <form>
+        <form action="https://formspree.io/your@email.com" method="POST" >
           <label class="Label"> Name:
             <br>
-            <input class="Input" type="text">
+            <input class="Input" name="Name" type="text">
           </label>
           <br>
           <label class="Label"> Email:
             <br>
-            <input class="Input" type="text">
+            <input class="Input" name="Email" type="email">
           </label>
           <br>
           <label class="Label"> Message:
             <br>
-            <textarea class="Input">
+            <textarea name="Message" class="Input">
             </textarea>
           </label>
           <br>
-          <div class="Submit">Submit</div>
+          <button class="Submit">Submit</button>
         </form>
       </div>
     </div>
