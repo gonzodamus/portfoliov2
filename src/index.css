@@ -21,7 +21,7 @@ body,html{
 .Link {
   color: #25A2B7;
   text-decoration: underline;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: .5em;
 }
 .Link:hover{
@@ -306,8 +306,8 @@ a{
       text-align: right;
     }
     .Link{
-      font-size: 1em;
-      margin-top: 5px;
+      font-size: 1.1em;
+      margin-top: 1em;
     }
     .Bio{
       padding: 2% 10% 2% 10%;
