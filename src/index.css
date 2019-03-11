@@ -27,6 +27,10 @@ body,html{
 .Link:hover{
   cursor: pointer;
 }
+.LightLink {
+  color: #FFF;
+  text-decoration: underline;
+}
 .Splash{
   height: 70vh;
   background-color: #F5F5F7;
