@@ -31,6 +31,13 @@ body,html{
   color: #FFF;
   text-decoration: underline;
 }
+.NavImage{
+  margin-right: 1%;
+  margin-top: 1%;
+}
+.NavImage > img {
+  height: 90%;
+}
 .Splash{
   height: 70vh;
   background-color: #F5F5F7;
