@@ -1,0 +1,41 @@
+{
+  "name": "dick-ward-portfolio",
+  "version": "2.0.0",
+  "description": "Modern, responsive portfolio website for Dick Ward - Full-Stack Web Developer",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "npx http-server src -p 3000 -o",
+    "dev": "npx live-server src --port=3000",
+    "build": "echo 'No build process needed for static site'",
+    "lint": "npx htmlhint src/*.html && npx stylelint src/*.css",
+    "validate": "npx html-validate src/index.html"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "responsive",
+    "accessibility",
+    "modern-css",
+    "vanilla-javascript"
+  ],
+  "author": "Dick Ward <theDickWard@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.10.1",
+    "stylelint-config-standard": "^34.0.0",
+    "html-validate": "^8.1.0",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gonzodamus/portfolio"
+  },
+  "homepage": "https://dickward.com"
+}

@@ -1,121 +1,251 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dick Ward - Full-Stack Web Developer specializing in JavaScript, React, and modern web technologies">
     <title>Dick Ward | Full-Stack Web Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Load fonts with font-display swap for better performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="index.css">
-    <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
-    <script type="text/javascript" src="index.js">
-    </script>
-  </head>
-  <body>
-    <div class="Navbar">
-      <a class="NavImage" href="https://www.linkedin.com/in/dick-ward/"><img src="images/Linkedin.png" /></a>
-      <a href="#Bio"><div class="Link">About Me</div></a>
-      <a href="#Projects"><div class="Link">My Projects</div></a>
-      <a href="https://s3.amazonaws.com/dickward.com/Dick+Ward+Resume.pdf"><div class="Link">Resume</div></a>
-      <a href="#Contact"><div class="Link">Get in Touch!</div></a>
-    </div>
-      <div class="Splash">
-        <img src="images/DickCartoon.png"/>
-        <div class="SplashText">
-          <div class="Headline">
-            Dick Ward
-            <hr>
-          </div>
-          <div class="Byline">
-            Full-Stack Web Developer<br>
-             Teacher<br>
-              Friend
-          </div>
-        </div>
-      </div>
-    <div id="Bio" class="Bio">
-      <div class="BioText">
-      <span>Full stack</span> web developer with a flair for the theatrical and a mission to leave the world a better place than I found it. Currently employed at the <span>New York Times</span> as an software engineer on their Growth team.  I have <span>taught over 100 people</span> how to create web apps with Ruby, Rails, SQL, JavaScript, React and Redux, and given self-made lectures on <span>essential skills</span> like Git, CSS, pair-programming and problem solving. I'm always looking for new ways to grow my skills as a <span>software engineer</span> and work with brilliant, dedicated people to create something amazing.
-      </div>
-    </div>
-    <div class="Quotes">
-        <div id="FirstQuote" class="QuotesText FirstQuote">“Dick is the person who will always bring the team up, and get everyone feeling great. On top of that he ships great work, and is a talented developer. I would love to work with him again, and anyone who has the chance to do so is very lucky.”
-          <br>
-          <p>- Genevieve Costa, UX Program Manager at Google</p>
-        </div>
-        <div id="ThirdQuote" class="QuotesText ThirdQuote">“Dick has always demonstrated good leadership skills. Whenever the group was deviating from the main focus of the project, he would take a depth breath, and gather the whole group together and get everybody to focus again.”
-          <br>
-          <p>- Fabiano Cunha, Dev Ops Engineer at 10th Floor Software</p>
-        </div>
-        <div id="SecondQuote" class="QuotesText SecondQuote">“Dick's positive attitude and reliability makes him an incredibly valuable team player.<br/> His drive to constantly improve his learning is unparalleled. Dick is the real deal!.”
-          <br>
-          <p>- Brandon Collins, Senior Program Manager at Flatiron School</p>
-        </div>
-      </div>
-    <div id="Projects" class="Container">
-      <div class="Project1">
-        <img class="ProjectImage" src="images/FieldDay.png" />
-      </div>
-      <div class="Description1">
-        <div class="DescriptionHeader">Flatiron Field Day UI</div>
-        <div class="DescriptionSubheader">JavaScript | Canvas | React</div>
-        To keep the student-facing interface simple, I built out the client in pure JavaScript and allowed for mouse and keyboard movement of the game board.
-        <div class="DescriptionLinks"><a href="https://medium.com/@TheDickWard/creating-a-fabulous-frontend-for-flatiron-field-day-9d0b09a6a652">Blog</a> | <a href="https://github.com/DanielSeehausen/fi-field-day">Github</a></div>
-      </div>
-      <div class="Description2">
-        <div class="DescriptionHeader">Yelp Disney</div>
-        <div class="DescriptionSubheader">React | Redux | Rails | Semantic UI</div>
-        To create the ratings in Yelp Disney, I utilized SVG Clip Paths, which allowed me to find and <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=901851">report a bug in Google Chrome</a>.  The bug is now fixed, so the app will work well on both Firefox and newer versions of Chrome.
-        <div class="DescriptionLinks"> <a href="https://medium.com/@TheDickWard/animated-ratings-using-svg-text-clip-paths-and-why-they-dont-work-in-chrome-107676891b7e">Blog</a> | Github: <a href="https://github.com/Gonzodamus/yelpdisney-client">Front</a>, <a href="https://github.com/Gonzodamus/yelpdisney-backend">Back</a> | <a href="https://yelp-disney.herokuapp.com/">Demo(Heroku)</a></div>
-      </div>
-      <div class="Project2">
-        <img class="ProjectImage" src="images/Yelpdisney.png" />
-      </div>
-      <div class="Project3">
-        <img class="ProjectImage" src="images/Schedulr.png" />
-      </div>
-      <div class="Description3">
-        <div class="DescriptionHeader">Schedulr</div>
-        <div class="DescriptionSubheader">React | Draggable | Semantic UI</div>
-        For my first project in React, I decided to play with a drag and drop package called Draggable, and wrote up a pair of blog posts on how I persisted the position of dragged items within a scrolling div.
-        <div class="DescriptionLinks"><a href="https://blog.cloudboost.io/creating-schedulr-a-drag-and-drop-react-day-planner-1d26ad565ea8">Blog</a> | Github: <a href="https://github.com/Gonzodamus/schedulr-client">Front</a>, <a href="https://github.com/Gonzodamus/schedulr-backend">Back</a> | <a href="https://fathomless-forest-91982.herokuapp.com/">Demo(Heroku)</a></div>
-      </div>
-    </div>
-    <div class="CurrentProjects">
-      <div class="DescriptionHeader">Current Projects </div>
-      <p>I've recently embarked on a learning path that will include testing, design, and React Native, as well as some deeper dives into subjects I'm already experienced with - specifically JavaScript and CSS/SASS.</p>
-  </div>
-    <div id="Contact" class="Contact">
-      <div class="ContactInfo">
-      Want to get in touch with me?  Great, I'd love to hear from you!  Hit me up on the contact form to the left, via email at <a class="Email" href="mailto:theDickWard@gmail.com?subject=Hey Dick! Let's chat :)">TheDickWard@gmail.com</a>, or on any of the platforms linked below.
-      <div class="ContactImages">
-        <a href="https://www.linkedin.com/in/dick-ward/"><img src="images/Linkedin.png" /></a>
-        <a href="https://www.github.com/gonzodamus/"><img src="images/Github.png" /></a>
-        <a href="https://www.twitter.com/thedickward"><img src="images/Twitter.png" /></a>
-      </div>
-    </div>
-      <div class="ContactForm">
-        <form action="https://formspree.io/theDickWard@gmail.com" method="POST" >
-          <label class="Label"> Name:
-            <br>
-            <input class="Input" name="Name" type="text">
-          </label>
-          <br>
-          <label class="Label"> Email:
-            <br>
-            <input class="Input" name="Email" type="email">
-          </label>
-          <br>
-          <label class="Label"> Message:
-            <br>
-            <textarea name="Message" class="Input">
-            </textarea>
-          </label>
-          <br>
-          <button class="Submit">Submit</button>
-        </form>
-      </div>
-    </div>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="https://www.linkedin.com/in/dick-ward/" 
+                   class="nav-logo"
+                   aria-label="LinkedIn Profile">
+                    <img src="images/Linkedin.png" alt="LinkedIn" width="24" height="24">
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#projects" class="nav-link">My Projects</a></li>
+                    <li><a href="https://s3.amazonaws.com/dickward.com/Dick+Ward+Resume.pdf" 
+                           class="nav-link" target="_blank" rel="noopener">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Get in Touch!</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <img src="images/DickCartoon.png" alt="Dick Ward cartoon illustration" loading="eager">
+                </div>
+                <div class="hero-content">
+                    <h1 id="hero-heading" class="hero-title">Dick Ward</h1>
+                    <div class="hero-subtitle">
+                        <p>Full-Stack Web Developer</p>
+                        <p>Teacher</p>
+                        <p>Friend</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  </body>
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="visually-hidden">About Me</h2>
+                <div class="about-content">
+                    <p>
+                        <strong>Full stack</strong> web developer with a flair for the theatrical and a mission to leave the world a better place than I found it. Currently employed at the <strong>New York Times</strong> as a software engineer on their Growth team. I have <strong>taught over 100 people</strong> how to create web apps with Ruby, Rails, SQL, JavaScript, React and Redux, and given self-made lectures on <strong>essential skills</strong> like Git, CSS, pair-programming and problem solving. I'm always looking for new ways to grow my skills as a <strong>software engineer</strong> and work with brilliant, dedicated people to create something amazing.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <h2 id="testimonials-heading" class="visually-hidden">Testimonials</h2>
+                <div class="testimonials-carousel">
+                    <div class="testimonial active" data-testimonial="1">
+                        <blockquote>
+                            <p>"Dick is the person who will always bring the team up, and get everyone feeling great. On top of that he ships great work, and is a talented developer. I would love to work with him again, and anyone who has the chance to do so is very lucky."</p>
+                            <cite>- Genevieve Costa, UX Program Manager at Google</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial" data-testimonial="2">
+                        <blockquote>
+                            <p>"Dick has always demonstrated good leadership skills. Whenever the group was deviating from the main focus of the project, he would take a deep breath, and gather the whole group together and get everybody to focus again."</p>
+                            <cite>- Fabiano Cunha, Dev Ops Engineer at 10th Floor Software</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial" data-testimonial="3">
+                        <blockquote>
+                            <p>"Dick's positive attitude and reliability makes him an incredibly valuable team player. His drive to constantly improve his learning is unparalleled. Dick is the real deal!"</p>
+                            <cite>- Brandon Collins, Senior Program Manager at Flatiron School</cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="testimonial-indicators" role="tablist" aria-label="Testimonial navigation">
+                    <button class="indicator active" aria-label="Show testimonial 1" data-index="0" role="tab" aria-selected="true"></button>
+                    <button class="indicator" aria-label="Show testimonial 2" data-index="1" role="tab" aria-selected="false"></button>
+                    <button class="indicator" aria-label="Show testimonial 3" data-index="2" role="tab" aria-selected="false"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+                
+                <div class="projects-grid">
+                    <article class="project">
+                        <div class="project-image">
+                            <img src="images/FieldDay.png" alt="Flatiron Field Day UI screenshot" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Flatiron Field Day UI</h3>
+                            <p class="project-tech">JavaScript | Canvas | React</p>
+                            <p class="project-description">
+                                To keep the student-facing interface simple, I built out the client in pure JavaScript and allowed for mouse and keyboard movement of the game board.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://medium.com/@TheDickWard/creating-a-fabulous-frontend-for-flatiron-field-day-9d0b09a6a652" 
+                                   target="_blank" rel="noopener" class="project-link">Blog</a>
+                                <a href="https://github.com/DanielSeehausen/fi-field-day" 
+                                   target="_blank" rel="noopener" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img src="images/Yelpdisney.png" alt="Yelp Disney application screenshot" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Yelp Disney</h3>
+                            <p class="project-tech">React | Redux | Rails | Semantic UI</p>
+                            <p class="project-description">
+                                To create the ratings in Yelp Disney, I utilized SVG Clip Paths, which allowed me to find and <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=901851" target="_blank" rel="noopener">report a bug in Google Chrome</a>. The bug is now fixed, so the app will work well on both Firefox and newer versions of Chrome.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://medium.com/@TheDickWard/animated-ratings-using-svg-text-clip-paths-and-why-they-dont-work-in-chrome-107676891b7e" 
+                                   target="_blank" rel="noopener" class="project-link">Blog</a>
+                                <a href="https://github.com/Gonzodamus/yelpdisney-client" 
+                                   target="_blank" rel="noopener" class="project-link">Frontend</a>
+                                <a href="https://github.com/Gonzodamus/yelpdisney-backend" 
+                                   target="_blank" rel="noopener" class="project-link">Backend</a>
+                                <a href="https://yelp-disney.herokuapp.com/" 
+                                   target="_blank" rel="noopener" class="project-link">Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img src="images/Schedulr.png" alt="Schedulr application screenshot" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Schedulr</h3>
+                            <p class="project-tech">React | Draggable | Semantic UI</p>
+                            <p class="project-description">
+                                For my first project in React, I decided to play with a drag and drop package called Draggable, and wrote up a pair of blog posts on how I persisted the position of dragged items within a scrolling div.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://blog.cloudboost.io/creating-schedulr-a-drag-and-drop-react-day-planner-1d26ad565ea8" 
+                                   target="_blank" rel="noopener" class="project-link">Blog</a>
+                                <a href="https://github.com/Gonzodamus/schedulr-client" 
+                                   target="_blank" rel="noopener" class="project-link">Frontend</a>
+                                <a href="https://github.com/Gonzodamus/schedulr-backend" 
+                                   target="_blank" rel="noopener" class="project-link">Backend</a>
+                                <a href="https://fathomless-forest-91982.herokuapp.com/" 
+                                   target="_blank" rel="noopener" class="project-link">Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="current-projects">
+                    <h3 class="current-projects-title">Current Projects</h3>
+                    <p>I've recently embarked on a learning path that will include testing, design, and React Native, as well as some deeper dives into subjects I'm already experienced with - specifically JavaScript and CSS/SASS.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>
+                            Want to get in touch with me? Great, I'd love to hear from you! Hit me up on the contact form, via email at 
+                            <a href="mailto:theDickWard@gmail.com?subject=Hey Dick! Let's chat :)" class="contact-email">TheDickWard@gmail.com</a>, 
+                            or on any of the platforms linked below.
+                        </p>
+                        
+                        <div class="social-links" role="list" aria-label="Social media links">
+                            <a href="https://www.linkedin.com/in/dick-ward/" 
+                               target="_blank" rel="noopener" 
+                               class="social-link" 
+                               aria-label="LinkedIn Profile">
+                                <img src="images/Linkedin.png" alt="LinkedIn" width="32" height="32">
+                            </a>
+                            <a href="https://www.github.com/gonzodamus/" 
+                               target="_blank" rel="noopener" 
+                               class="social-link" 
+                               aria-label="GitHub Profile">
+                                <img src="images/Github.png" alt="GitHub" width="32" height="32">
+                            </a>
+                            <a href="https://www.twitter.com/thedickward" 
+                               target="_blank" rel="noopener" 
+                               class="social-link" 
+                               aria-label="Twitter Profile">
+                                <img src="images/Twitter.png" alt="Twitter" width="32" height="32">
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="https://formspree.io/theDickWard@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" id="name" name="Name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" name="Email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea id="message" name="Message" class="form-textarea" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
 </html>
